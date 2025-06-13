@@ -3,475 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CollabLearn - Learn Together, Achieve More</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>CollabLearn - Peer Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="nav-container">
-                <div class="nav-brand">
-                    <div class="logo">
-                        <span>C</span>
-                    </div>
-                    <span class="brand-name">CollabLearn</span>
-                </div>
-                
-                <div class="nav-menu">
-                    <a href="#features" class="nav-link">Features</a>
-                    <a href="#instant-help" class="nav-link">Instant Help</a>
-                    <a href="#tutors" class="nav-link">Expert Tutors</a>
-                    <a href="#how-it-works" class="nav-link">How it Works</a>
-                    <a href="#pricing" class="nav-link">Pricing</a>
-                    <a href="#about" class="nav-link">About</a>
-                </div>
-                
-                <div class="nav-actions">
-                    <button class="btn-signin">Sign In</button>
-                    <button class="btn-primary">Get Started</button>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Navigation -->
+    <nav class="navbar">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        Learn Together,
-                        <span class="text-primary">Achieve More</span>
-                    </h1>
-                    <p class="hero-description">
-                        CollabLearn transforms studying into a social, engaging experience. Connect with study buddies, 
-                        collaborate in real-time, get instant expert help 24/7, and gamify your learning journey.
-                    </p>
-                    <div class="hero-buttons">
-                        <button class="btn-cta">Start Learning Free</button>
-                        <button class="btn-secondary">Get Instant Help</button>
-                        <button class="btn-tertiary">Watch Demo</button>
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <h1>CollabLearn</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active"><i class="fas fa-home"></i> Dashboard</a>
+                <a href="#"><i class="fas fa-users"></i> Study Buddies</a>
+                <a href="#"><i class="fas fa-book"></i> Notes</a>
+                <a href="#"><i class="fas fa-question-circle"></i> Q&A</a>
+                <a href="#"><i class="fas fa-chalkboard-teacher"></i> Study Rooms</a>
+            </div>
+            <div class="user-section">
+                <div class="xp-bar">
+                    <div class="xp-fill" style="width: 65%;"></div>
+                </div>
+                <div class="user-info">
+                    <span class="level-badge">Lvl 3</span>
+                    <div class="streak-counter">
+                        <div class="streak-icon">🔥</div>
+                        <span>5</span>
                     </div>
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <div class="stat-number">2.5M+</div>
-                            <div class="stat-label">Active Students</div>
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User Avatar" class="avatar">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="dashboard">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="profile-card">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Profile" class="profile-img">
+                <h3>Sarah Johnson</h3>
+                <p>Computer Science Student</p>
+                <div class="stats">
+                    <div class="stat">
+                        <h4>125</h4>
+                        <p>Posts</p>
+                    </div>
+                    <div class="stat">
+                        <h4>458</h4>
+                        <p>Followers</p>
+                    </div>
+                    <div class="stat">
+                        <h4>234</h4>
+                        <p>Following</p>
+                    </div>
+                </div>
+                <button class="button button-primary"><i class="fas fa-edit"></i> Edit Profile</button>
+            </div>
+
+            <div class="sidebar-nav">
+                <h4>Quick Actions</h4>
+                <ul>
+                    <li><a href="#"><i class="fas fa-plus-circle"></i> Create Post</a></li>
+                    <li><a href="#"><i class="fas fa-calendar-plus"></i> Schedule Study</a></li>
+                    <li><a href="#"><i class="fas fa-user-plus"></i> Find Buddy</a></li>
+                    <li><a href="#"><i class="fas fa-question-circle"></i> Ask Question</a></li>
+                </ul>
+            </div>
+
+            <div class="trending-topics">
+                <h4>Trending Topics</h4>
+                <div class="topic-tag">#MachineLearning</div>
+                <div class="topic-tag">#Algorithms</div>
+                <div class="topic-tag">#WebDevelopment</div>
+                <div class="topic-tag">#DataScience</div>
+                <div class="topic-tag">#Python</div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <div class="welcome-card">
+                <h2>Welcome back, Sarah! 👋</h2>
+                <p>You have 3 upcoming study sessions and 2 new questions to answer.</p>
+                <div class="quick-actions">
+                    <button class="button button-outline"><i class="fas fa-plus-circle"></i> New Post</button>
+                    <button class="button button-primary"><i class="fas fa-calendar-plus"></i> Schedule Study</button>
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <!-- Study Buddy Match -->
+                <div class="card study-buddy">
+                    <div class="card-header">
+                        <h3><i class="fas fa-user-friends"></i> Study Buddy Match</h3>
+                        <a href="#" class="see-all">See All</a>
+                    </div>
+                    <div class="buddy-card">
+                        <div class="buddy-info">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Buddy" class="buddy-avatar">
+                            <div>
+                                <h4>Michael Chen</h4>
+                                <p>Computer Science • AI Enthusiast</p>
+                            </div>
                         </div>
-                        <div class="stat">
-                            <div class="stat-number">50k+</div>
-                            <div class="stat-label">Expert Tutors</div>
+                        <div class="buddy-tags">
+                            <span class="badge">Python</span>
+                            <span class="badge">Machine Learning</span>
                         </div>
-                        <div class="stat">
-                            <div class="stat-number">4.8</div>
-                            <div class="stat-label">App Rating</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">60s</div>
-                            <div class="stat-label">Avg Response</div>
+                        <div class="buddy-actions">
+                            <button class="button button-outline"><i class="fas fa-user-plus"></i> Connect</button>
+                            <button class="button button-secondary"><i class="fas fa-comments"></i> Message</button>
                         </div>
                     </div>
                 </div>
-                
-                <div class="hero-visual">
-                    <div class="dashboard-card">
-                        <div class="card-content">
-                            <div class="study-group">
-                                <div class="group-icon">
-                                    <span>👥</span>
+
+                <!-- Upcoming Study Sessions -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-calendar-alt"></i> Upcoming Study Sessions</h3>
+                        <a href="#" class="see-all">See All</a>
+                    </div>
+                    <div class="study-session">
+                        <div class="session-header">
+                            <h4>Algorithms Study Group</h4>
+                            <span class="badge">Today, 3:00 PM</span>
+                        </div>
+                        <div class="session-details">
+                            <p>Chapter 4: Graph Algorithms</p>
+                            <div class="participants">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Participant" class="participant-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Participant" class="participant-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Participant" class="participant-avatar">
+                                <span class="more-participants">+3</span>
+                            </div>
+                        </div>
+                        <button class="button button-outline"><i class="fas fa-video"></i> Join Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <!-- Active Q&A -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-question-circle"></i> Active Q&A</h3>
+                        <a href="#" class="see-all">See All</a>
+                    </div>
+                    <div class="question-card">
+                        <div class="question-header">
+                            <div class="question-info">
+                                <h4>How do neural networks work?</h4>
+                                <div class="question-meta">
+                                    <span>Asked by Michael Chen</span>
+                                    <span>• 2 hours ago</span>
                                 </div>
-                                <div class="group-info">
-                                    <div class="group-name">Study Group: Math 101</div>
-                                    <div class="group-status">3 members online</div>
-                                </div>
                             </div>
-                            <div class="progress-section">
-                                <div class="progress-header">
-                                    <span>Weekly Progress</span>
-                                    <span class="xp-gain">+15 XP</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill"></div>
-                                </div>
+                            <div class="question-tags">
+                                <span class="badge">Machine Learning</span>
+                                <span class="badge">AI</span>
                             </div>
-                            <div class="badges">
-                                <div class="badge badge-primary">🏆 Top Helper</div>
-                                <div class="badge badge-secondary">🔥 7 Day Streak</div>
+                        </div>
+                        <div class="question-actions">
+                            <button class="button button-outline"><i class="fas fa-comment"></i> Answer</button>
+                            <div class="question-stats">
+                                <span><i class="fas fa-comment"></i> 5</span>
+                                <span><i class="fas fa-eye"></i> 23</span>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="floating-element insight">💡 New Insight</div>
-                    <div class="floating-element achievement">✅ Goal Achieved</div>
-                    <div class="floating-element tutor-online">🎓 Expert Available</div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Instant Help Section -->
-    <section id="instant-help" class="instant-help">
-        <div class="container">
-            <div class="instant-help-content">
-                <div class="instant-help-text">
-                    <h2 class="section-title">Get Help in <span class="text-primary">Under 60 Seconds</span></h2>
-                    <p class="section-description">
-                        No appointment necessary. Our expert tutors are available 24/7 to help you with homework, 
-                        assignments, or exam preparation. Just click and get instant help!
-                    </p>
-                    <div class="instant-features">
-                        <div class="instant-feature">
-                            <div class="instant-icon">⚡</div>
-                            <div class="instant-text">
-                                <h4>Lightning Fast</h4>
-                                <p>Get connected to tutors in under 60 seconds</p>
-                            </div>
-                        </div>
-                        <div class="instant-feature">
-                            <div class="instant-icon">🌍</div>
-                            <div class="instant-text">
-                                <h4>24/7 Availability</h4>
-                                <p>Expert help available anytime, anywhere</p>
-                            </div>
-                        </div>
-                        <div class="instant-feature">
-                            <div class="instant-icon">🎯</div>
-                            <div class="instant-text">
-                                <h4>All Subjects</h4>
-                                <p>Math, Science, Languages, and more</p>
-                            </div>
-                        </div>
+                <!-- Recent Notes -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-book"></i> Recent Notes</h3>
+                        <a href="#" class="see-all">See All</a>
                     </div>
-                    <button class="btn-instant-help">Get Instant Help Now</button>
-                </div>
-                <div class="instant-help-visual">
-                    <div class="help-card">
-                        <div class="help-header">
-                            <div class="help-status">🟢 Online</div>
-                            <div class="help-time">Available Now</div>
+                    <div class="note-card">
+                        <div class="note-header">
+                            <h4>Graph Algorithms</h4>
+                            <span class="badge">Last edited 2 days ago</span>
                         </div>
-                        <div class="help-content">
-                            <div class="tutor-info">
-                                <div class="tutor-avatar">👨‍🏫</div>
-                                <div class="tutor-details">
-                                    <div class="tutor-name">Dr. Sarah Chen</div>
-                                    <div class="tutor-subject">Mathematics Expert</div>
-                                    <div class="tutor-rating">⭐ 4.9 (2.3k reviews)</div>
-                                </div>
-                            </div>
-                            <div class="help-message">
-                                <p>"Ready to help with your calculus problem!"</p>
-                            </div>
+                        <div class="note-preview">
+                            <p>Graph algorithms are fundamental in computer science. They include algorithms for traversing graphs, finding shortest paths, detecting cycles, and more...</p>
+                        </div>
+                        <div class="note-actions">
+                            <button class="button button-outline"><i class="fas fa-edit"></i> Edit</button>
+                            <button class="button button-secondary"><i class="fas fa-share"></i> Share</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Everything You Need to Excel</h2>
-                <p class="section-description">
-                    From AI-powered study buddy matching to instant expert tutoring and real-time collaboration tools, 
-                    CollabLearn has everything you need to make learning social and effective.
-                </p>
-            </div>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon icon-primary">
-                        <span>👯‍♂️</span>
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <div class="achievements-card">
+                <h3><i class="fas fa-trophy"></i> Achievements</h3>
+                <div class="achievement">
+                    <div class="achievement-icon">
+                        <i class="fas fa-star"></i>
                     </div>
-                    <h3 class="feature-title">Study Buddy Matching</h3>
-                    <p class="feature-description">
-                        Our smart algorithm pairs you with perfect study partners based on subjects, 
-                        schedules, and learning styles.
-                    </p>
-                    <div class="feature-tags">
-                        <span class="tag tag-primary">Smart Pairing</span>
-                        <span class="tag tag-primary">Time Zones</span>
+                    <div>
+                        <h4>Top Contributor</h4>
+                        <p>Answered 50 questions</p>
                     </div>
                 </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon icon-secondary">
-                        <span>📝</span>
+                <div class="achievement">
+                    <div class="achievement-icon">
+                        <i class="fas fa-brain"></i>
                     </div>
-                    <h3 class="feature-title">Real-time Notes</h3>
-                    <p class="feature-description">
-                        Create, edit, and share notes together in real-time with markdown support 
-                        and collaborative commenting.
-                    </p>
-                    <div class="feature-tags">
-                        <span class="tag tag-secondary">Live Editing</span>
-                        <span class="tag tag-secondary">Comments</span>
+                    <div>
+                        <h4>Study Streak</h4>
+                        <p>7 days in a row</p>
                     </div>
                 </div>
-
-                <div class="feature-card featured">
-                    <div class="feature-ribbon">Most Popular</div>
-                    <div class="feature-icon icon-instant">
-                        <span>🚀</span>
+                <div class="achievement">
+                    <div class="achievement-icon">
+                        <i class="fas fa-users"></i>
                     </div>
-                    <h3 class="feature-title">Instant Expert Tutoring</h3>
-                    <p class="feature-description">
-                        Connect with top 1% certified tutors in under 60 seconds. Get help with homework, 
-                        assignments, and exam prep 24/7.
-                    </p>
-                    <div class="feature-tags">
-                        <span class="tag tag-instant">60s Response</span>
-                        <span class="tag tag-instant">24/7 Available</span>
-                    </div>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon icon-success">
-                        <span>🧠</span>
-                    </div>
-                    <h3 class="feature-title">Peer Q&A Forum</h3>
-                    <p class="feature-description">
-                        Get help from classmates with StackOverflow-style voting and 
-                        AI-assisted answer suggestions.
-                    </p>
-                    <div class="feature-tags">
-                        <span class="tag tag-success">Voting System</span>
-                        <span class="tag tag-success">AI Assist</span>
-                    </div>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon icon-warning">
-                        <span>📹</span>
-                    </div>
-                    <h3 class="feature-title">Group Study Rooms</h3>
-                    <p class="feature-description">
-                        Join virtual study rooms with video chat, shared whiteboards, 
-                        and integrated Pomodoro timers.
-                    </p>
-                    <div class="feature-tags">
-                        <span class="tag tag-warning">Video Chat</span>
-                        <span class="tag tag-warning">Whiteboard</span>
-                    </div>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon icon-purple">
-                        <span>🧪</span>
-                    </div>
-                    <h3 class="feature-title">Gamified Learning</h3>
-                    <p class="feature-description">
-                        Earn XP, unlock badges, and climb leaderboards while helping 
-                        classmates and completing challenges.
-                    </p>
-                    <div class="feature-tags">
-                        <span class="tag tag-purple">XP System</span>
-                        <span class="tag tag-purple">Badges</span>
-                    </div>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon icon-pink">
-                        <span>🧾</span>
-                    </div>
-                    <h3 class="feature-title">Learning Dashboard</h3>
-                    <p class="feature-description">
-                        Track your progress with Kanban-style task boards, 
-                        assignment tracking, and visual study logs.
-                    </p>
-                    <div class="feature-tags">
-                        <span class="tag tag-pink">Kanban Board</span>
-                        <span class="tag tag-pink">Progress Tracking</span>
-                    </div>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon icon-blue">
-                        <span>📱</span>
-                    </div>
-                    <h3 class="feature-title">Mobile Learning</h3>
-                    <p class="feature-description">
-                        Study on-the-go with our mobile app. Access all features, 
-                        get instant help, and stay connected with your study groups.
-                    </p>
-                    <div class="feature-tags">
-                        <span class="tag tag-blue">iOS & Android</span>
-                        <span class="tag tag-blue">Offline Mode</span>
-                    </div>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon icon-green">
-                        <span>🎯</span>
-                    </div>
-                    <h3 class="feature-title">Personalized Learning</h3>
-                    <p class="feature-description">
-                        AI-powered recommendations for study materials, practice problems, 
-                        and learning paths based on your performance.
-                    </p>
-                    <div class="feature-tags">
-                        <span class="tag tag-green">AI Powered</span>
-                        <span class="tag tag-green">Adaptive</span>
+                    <div>
+                        <h4>Social Learner</h4>
+                        <p>10 study sessions</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Expert Tutors Section -->
-    <section id="tutors" class="tutors">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Learn from the <span class="text-primary">Top 1%</span> of Tutors</h2>
-                <p class="section-description">
-                    Our rigorous selection process ensures you get help from only the best. 
-                    All tutors are tested on knowledge depth, teaching ability, and passion for education.
-                </p>
-            </div>
-            
-            <div class="tutors-grid">
-                <div class="tutor-card">
-                    <div class="tutor-avatar-large">👨‍🏫</div>
-                    <h4 class="tutor-name">Dr. James Wilson</h4>
-                    <p class="tutor-specialty">Physics & Mathematics</p>
-                    <div class="tutor-stats">
-                        <div class="tutor-stat">
-                            <span class="stat-number">4.9</span>
-                            <span class="stat-label">Rating</span>
-                        </div>
-                        <div class="tutor-stat">
-                            <span class="stat-number">3.2k</span>
-                            <span class="stat-label">Sessions</span>
-                        </div>
-                        <div class="tutor-stat">
-                            <span class="stat-number">98%</span>
-                            <span class="stat-label">Success Rate</span>
-                        </div>
-                    </div>
+            <div class="study-timer-card">
+                <h3><i class="fas fa-clock"></i> Study Timer</h3>
+                <div class="timer-display">25:00</div>
+                <div class="timer-controls">
+                    <button class="button button-outline">Start</button>
+                    <button class="button button-outline">Pause</button>
+                    <button class="button button-outline">Reset</button>
                 </div>
-                
-                <div class="tutor-card">
-                    <div class="tutor-avatar-large">👩‍🏫</div>
-                    <h4 class="tutor-name">Prof. Maria Garcia</h4>
-                    <p class="tutor-specialty">Chemistry & Biology</p>
-                    <div class="tutor-stats">
-                        <div class="tutor-stat">
-                            <span class="stat-number">4.8</span>
-                            <span class="stat-label">Rating</span>
-                        </div>
-                        <div class="tutor-stat">
-                            <span class="stat-number">2.8k</span>
-                            <span class="stat-label">Sessions</span>
-                        </div>
-                        <div class="tutor-stat">
-                            <span class="stat-number">96%</span>
-                            <span class="stat-label">Success Rate</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="tutor-card">
-                    <div class="tutor-avatar-large">👨‍💻</div>
-                    <h4 class="tutor-name">Dr. Alex Chen</h4>
-                    <p class="tutor-specialty">Computer Science</p>
-                    <div class="tutor-stats">
-                        <div class="tutor-stat">
-                            <span class="stat-number">4.9</span>
-                            <span class="stat-label">Rating</span>
-                        </div>
-                        <div class="tutor-stat">
-                            <span class="stat-number">4.1k</span>
-                            <span class="stat-label">Sessions</span>
-                        </div>
-                        <div class="tutor-stat">
-                            <span class="stat-number">99%</span>
-                            <span class="stat-label">Success Rate</span>
-                        </div>
-                    </div>
+                <div class="pomodoro-options">
+                    <button class="button button-outline active">25 min</button>
+                    <button class="button button-outline">50 min</button>
+                    <button class="button button-outline">90 min</button>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="cta-container">
-            <h2 class="cta-title">Ready to Transform Your Learning?</h2>
-            <p class="cta-description">
-                Join millions of students who are already learning better together. 
-                Start your collaborative learning journey today with instant expert support.
-            </p>
-            <div class="cta-buttons">
-                <button class="btn-cta-white">Start Free Trial</button>
-                <button class="btn-cta-outline">Get Instant Help</button>
-                <button class="btn-cta-outline">Schedule Demo</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <div class="logo">
-                            <span>C</span>
-                        </div>
-                        <span class="brand-name">CollabLearn</span>
-                    </div>
-                    <p class="footer-description">
-                        Making learning social, engaging, and effective for students worldwide with instant expert support.
-                    </p>
-                </div>
-                
-                <div class="footer-column">
-                    <h4 class="footer-title">Product</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Instant Tutoring</a></li>
-                        <li><a href="#">Study Groups</a></li>
-                        <li><a href="#">Mobile App</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">API</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h4 class="footer-title">Support</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">24/7 Support</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Community</a></li>
-                        <li><a href="#">Become a Tutor</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h4 class="footer-title">Company</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Partners</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 CollabLearn. All rights reserved.</p>
-                <div class="footer-social">
-                    <span>Available on:</span>
-                    <span class="app-badge">📱 iOS</span>
-                    <span class="app-badge">🤖 Android</span>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </aside>
+    </main>
 </body>
 </html>
