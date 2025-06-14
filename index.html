@@ -17,11 +17,11 @@
                 <h1>CollabLearn</h1>
             </div>
             <div class="nav-links">
-                <a href="#" class="active"><i class="fas fa-home"></i> Dashboard</a>
-                <a href="#"><i class="fas fa-users"></i> Study Buddies</a>
-                <a href="#"><i class="fas fa-book"></i> Notes</a>
-                <a href="#"><i class="fas fa-question-circle"></i> Q&A</a>
-                <a href="#"><i class="fas fa-chalkboard-teacher"></i> Study Rooms</a>
+                <a href="#" class="active" data-tab="dashboard"><i class="fas fa-home"></i> Dashboard</a>
+                <a href="#" data-tab="study-buddies"><i class="fas fa-users"></i> Study Buddies</a>
+                <a href="#" data-tab="notes"><i class="fas fa-book"></i> Notes</a>
+                <a href="#" data-tab="qa"><i class="fas fa-question-circle"></i> Q&A</a>
+                <a href="#" data-tab="study-rooms"><i class="fas fa-chalkboard-teacher"></i> Study Rooms</a>
             </div>
             <div class="user-section">
                 <div class="xp-bar">
@@ -33,20 +33,24 @@
                         <div class="streak-icon">🔥</div>
                         <span>5</span>
                     </div>
-                    <img src="img/16.jpg" alt="User Avatar" class="avatar">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User Avatar" class="avatar">
                 </div>
+                <button class="dark-mode-toggle"><i class="fas fa-moon"></i></button>
             </div>
         </div>
     </nav>
+
+    <!-- Mobile Navigation Toggle -->
+    <button class="mobile-nav-toggle"><i class="fas fa-bars"></i></button>
 
     <!-- Main Content -->
     <main class="dashboard">
         <!-- Left Sidebar -->
         <aside class="sidebar">
-            <div class="profile-card">
-                <img src="img/16.jpg" alt="Profile" class="profile-img">
-                <h3>Sarah Ada Uogchukwu</h3>
-                <p>Computer Science Student</p>
+            <div class="profile-card fade-in">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Profile" class="profile-img">
+                <h3>Sarah Johnson</h3>
+                <p>Computer Science Student at University of Abuja</p>
                 <div class="stats">
                     <div class="stat">
                         <h4>125</h4>
@@ -64,17 +68,17 @@
                 <button class="button button-primary"><i class="fas fa-edit"></i> Edit Profile</button>
             </div>
 
-            <div class="sidebar-nav">
+            <div class="sidebar-nav fade-in">
                 <h4>Quick Actions</h4>
                 <ul>
-                    <li><a href="#"><i class="fas fa-plus-circle"></i> Create Post</a></li>
-                    <li><a href="#"><i class="fas fa-calendar-plus"></i> Schedule Study</a></li>
-                    <li><a href="#"><i class="fas fa-user-plus"></i> Find Buddy</a></li>
-                    <li><a href="#"><i class="fas fa-question-circle"></i> Ask Question</a></li>
+                    <li><a href="#" class="post-option" data-action="create-post"><i class="fas fa-plus-circle"></i> Create Post</a></li>
+                    <li><a href="#" class="post-option" data-action="schedule-study"><i class="fas fa-calendar-plus"></i> Schedule Study</a></li>
+                    <li><a href="#" class="post-option" data-action="find-buddy"><i class="fas fa-user-plus"></i> Find Buddy</a></li>
+                    <li><a href="#" class="post-option" data-action="ask-question"><i class="fas fa-question-circle"></i> Ask Question</a></li>
                 </ul>
             </div>
 
-            <div class="trending-topics">
+            <div class="trending-topics fade-in">
                 <h4>Trending Topics</h4>
                 <div class="topic-tag">#MachineLearning</div>
                 <div class="topic-tag">#Algorithms</div>
@@ -86,34 +90,41 @@
 
         <!-- Main Content Area -->
         <div class="main-content">
-            <div class="welcome-card">
+            <div class="welcome-card fade-in">
                 <h2>Welcome back, Sarah! 👋</h2>
                 <p>You have 3 upcoming study sessions and 2 new questions to answer.</p>
                 <div class="quick-actions">
-                    <button class="button button-outline"><i class="fas fa-plus-circle"></i> New Post</button>
+                    <button class="button button-outline create-post-button"><i class="fas fa-plus-circle"></i> New Post</button>
                     <button class="button button-primary"><i class="fas fa-calendar-plus"></i> Schedule Study</button>
                 </div>
             </div>
 
-            <div class="content-grid">
-                <!-- Study Buddy Match -->
-                <div class="card study-buddy">
+            <!-- Tab Navigation -->
+            <div class="tabs">
+                <button class="tab-button active" data-tab="posts">Posts</button>
+                <button class="tab-button" data-tab="events">Events</button>
+                <button class="tab-button" data-tab="communities">Communities</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content active" id="posts">
+                <!-- Study Buddy Match Section -->
+                <div class="card study-buddy fade-in">
                     <div class="card-header">
                         <h3><i class="fas fa-user-friends"></i> Study Buddy Match</h3>
                         <a href="#" class="see-all">See All</a>
                     </div>
                     <div class="buddy-card">
                         <div class="buddy-info">
-                            <img src="img/17.jpg" alt="Buddy" class="buddy-avatar">
+                            <img src="img/6.jpg" alt="Buddy" class="buddy-avatar">
                             <div>
-                                <h4>Michael Taiwo</h4>
-                                <p>Computer Science Student • AI Enthusiast</p>
+                                <h4>Michelle Chinedu</h4>
+                                <p>Computer Science • AI Enthusiast</p>
                             </div>
                         </div>
                         <div class="buddy-tags">
                             <span class="badge">Python</span>
                             <span class="badge">Machine Learning</span>
-                            <span class="badge">Data Analysis</span>
                         </div>
                         <div class="buddy-actions">
                             <button class="button button-outline"><i class="fas fa-user-plus"></i> Connect</button>
@@ -121,9 +132,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div class="tab-content" id="events">
                 <!-- Upcoming Study Sessions -->
-                <div class="card">
+                <div class="card fade-in">
                     <div class="card-header">
                         <h3><i class="fas fa-calendar-alt"></i> Upcoming Study Sessions</h3>
                         <a href="#" class="see-all">See All</a>
@@ -136,10 +149,26 @@
                         <div class="session-details">
                             <p>Chapter 4: Graph Algorithms</p>
                             <div class="participants">
-                                <img src="img/15.jpg" alt="Participant" class="participant-avatar">
-                                <img src="img/6.jpg" alt="Participant" class="participant-avatar">
-                                <img src="img/12.jpg" alt="Participant" class="participant-avatar">
-                                <img src="img/13.jpg" alt="Participant" class="participant-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Participant" class="participant-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Participant" class="participant-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Participant" class="participant-avatar">
+                                <span class="more-participants">+3</span>
+                            </div>
+                        </div>
+                        <button class="button button-outline"><i class="fas fa-video"></i> Join Now</button>
+                    </div>
+
+                    <div class="study-session">
+                        <div class="session-header">
+                            <h4>Python Study Group</h4>
+                            <span class="badge">Today, 3:00 PM</span>
+                        </div>
+                        <div class="session-details">
+                            <p>Chapter 7: Object Oriented Programming "OOP"</p>
+                            <div class="participants">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Participant" class="participant-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Participant" class="participant-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Participant" class="participant-avatar">
                                 <span class="more-participants">+3</span>
                             </div>
                         </div>
@@ -148,55 +177,18 @@
                 </div>
             </div>
 
-            <div class="content-grid">
-                <!-- Active Q&A -->
-                <div class="card">
-                    <div class="card-header">
-                        <h3><i class="fas fa-question-circle"></i> Active Q&A</h3>
-                        <a href="#" class="see-all">See All</a>
+            <div class="tab-content" id="communities">
+                <!-- Communities Section -->
+                <div class="community fade-in">
+                    <div class="community-header">
+                        <h3>Computer Science Study Group</h3>
+                        <p>15 Members</p>
                     </div>
-                    <div class="question-card">
-                        <div class="question-header">
-                            <div class="question-info">
-                                <h4>How do neural networks work?</h4>
-                                <div class="question-meta">
-                                    <span>Asked by Andrew Kanayo</span>
-                                    <span>2 hours ago</span>
-                                </div>
-                            </div>
-                            <div class="question-tags">
-                                <span class="badge">Topic: Machine Learning</span>
-                                <span class="badge">Field: AI</span>
-                            </div>
-                        </div>
-                        <div class="question-actions">
-                            <button class="button button-outline"><i class="fas fa-comment"></i> Answer</button>
-                            <div class="question-stats">
-                                <span><i class="fas fa-comment"></i> 5</span>
-                                <span><i class="fas fa-eye"></i> 23</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Recent Notes -->
-                <div class="card">
-                    <div class="card-header">
-                        <h3><i class="fas fa-book"></i> Recent Notes</h3>
-                        <a href="#" class="see-all">See All</a>
-                    </div>
-                    <div class="note-card">
-                        <div class="note-header">
-                            <h4>Graph Algorithms</h4>
-                            <span class="badge">Last edited 30 mins ago</span>
-                        </div>
-                        <div class="note-preview">
-                            <p>Graph algorithms are fundamental in computer science. They include algorithms for traversing graphs, finding shortest paths, detecting cycles, and more...</p>
-                        </div>
-                        <div class="note-actions">
-                            <button class="button button-outline"><i class="fas fa-edit"></i> Edit</button>
-                            <button class="button button-secondary"><i class="fas fa-share"></i> Share</button>
-                        </div>
+                    <p class="community-content">A group for Computer Science students to discuss course materials and work on assignments together.</p>
+                    <div class="community-actions">
+                        <button class="button button-outline"><i class="fas fa-thumbs-up"></i> Like <span class="count">156</span></button>
+                        <button class="button button-outline"><i class="fas fa-comment"></i> Comment <span class="count">28</span></button>
+                        <button class="button button-outline"><i class="fas fa-share"></i> Share <span class="count">7</span></button>
                     </div>
                 </div>
             </div>
@@ -204,7 +196,7 @@
 
         <!-- Right Sidebar -->
         <aside class="right-sidebar">
-            <div class="achievements-card">
+            <div class="achievements-card fade-in">
                 <h3><i class="fas fa-trophy"></i> Achievements</h3>
                 <div class="achievement">
                     <div class="achievement-icon">
@@ -235,21 +227,29 @@
                 </div>
             </div>
 
-            <div class="study-timer-card">
+            <div class="study-timer-card fade-in">
                 <h3><i class="fas fa-clock"></i> Study Timer</h3>
-                <div class="timer-display">60:00</div>
+                <div class="timer-display">25:00</div>
                 <div class="timer-controls">
-                    <button class="button button-outline">Start</button>
-                    <button class="button button-outline">Pause</button>
-                    <button class="button button-outline">Reset</button>
+                    <button class="button button-outline start-timer">Start</button>
+                    <button class="button button-outline pause-timer">Pause</button>
+                    <button class="button button-outline reset-timer">Reset</button>
                 </div>
                 <div class="pomodoro-options">
-                    <button class="button button-outline active">30 min</button>
-                    <button class="button button-outline">60 min</button>
-                    <button class="button button-outline">90 min</button>
+                    <button class="button button-outline active" data-duration="25">25 min</button>
+                    <button class="button button-outline" data-duration="50">50 min</button>
+                    <button class="button button-outline" data-duration="90">90 min</button>
                 </div>
             </div>
         </aside>
     </main>
+
+    <!-- Modal Container -->
+    <div id="modal-container"></div>
+
+    <!-- Notification Container -->
+    <div id="notification-container"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
