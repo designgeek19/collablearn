@@ -34,14 +34,12 @@
                         <span>5</span>
                     </div>
                     <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User Avatar" class="avatar">
-                </div>
-                <button class="dark-mode-toggle"><i class="fas fa-moon"></i></button>
-            </div>
+
         </div>
     </nav>
 
-    <!-- Mobile Navigation Toggle -->
-    <button class="mobile-nav-toggle"><i class="fas fa-bars"></i></button>
+    <!-- Mobile Navigation Toggle
+    <button class="mobile-nav-toggle"><i class="fas fa-bars"></i></button> -->
 
     <!-- Main Content -->
     <main class="dashboard">
@@ -102,40 +100,187 @@
             <!-- Tab Navigation -->
             <div class="tabs">
                 <button class="tab-button active" data-tab="posts">Posts</button>
+                <button class="tab-button" data-tab="courses">My Courses</button>
                 <button class="tab-button" data-tab="events">Events</button>
                 <button class="tab-button" data-tab="communities">Communities</button>
             </div>
 
             <!-- Tab Content -->
             <div class="tab-content active" id="posts">
-                <!-- Study Buddy Match Section -->
-                <div class="card study-buddy fade-in">
-                    <div class="card-header">
-                        <h3><i class="fas fa-user-friends"></i> Study Buddy Match</h3>
-                        <a href="#" class="see-all">See All</a>
+                <!-- Student Post 1 -->
+                <div class="student-post">
+                    <div class="post-header">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Student" class="student-avatar">
+                        <div class="post-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Computer Science • 2 hours ago</p>
+                        </div>
                     </div>
-                    <div class="buddy-card">
-                        <div class="buddy-info">
-                            <img src="img/6.jpg" alt="Buddy" class="buddy-avatar">
-                            <div>
-                                <h4>Michelle Chinedu</h4>
-                                <p>Computer Science • AI Enthusiast</p>
-                            </div>
-                        </div>
-                        <div class="buddy-tags">
-                            <span class="badge">Python</span>
-                            <span class="badge">Machine Learning</span>
-                        </div>
-                        <div class="buddy-actions">
-                            <button class="button button-outline"><i class="fas fa-user-plus"></i> Connect</button>
-                            <button class="button button-secondary"><i class="fas fa-comments"></i> Message</button>
-                        </div>
+                    <div class="post-content">
+                        <p>Just finished my final project on neural networks! It was challenging but rewarding. Here's a quick overview of what I learned:</p>
+                        <ul>
+                            <li>Understood the basics of neural network architecture</li>
+                            <li>Implemented a simple feedforward network in Python</li>
+                            <li>Learned about backpropagation and gradient descent</li>
+                        </ul>
+                    </div>
+                    <div class="post-tags">
+                        <span class="tag">#MachineLearning</span>
+                        <span class="tag">#Python</span>
+                        <span class="tag">#NeuralNetworks</span>
+                    </div>
+                    <div class="post-actions">
+                        <button class="button button-outline"><i class="fas fa-thumbs-up"></i> Like <span class="count">47</span></button>
+                        <button class="button button-outline"><i class="fas fa-comment"></i> Comment <span class="count">12</span></button>
+                        <button class="button button-outline"><i class="fas fa-share"></i> Share <span class="count">3</span></button>
                     </div>
                 </div>
+
+                <!-- Student Post 2 -->
+                <div class="student-post">
+                    <div class="post-header">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Student" class="student-avatar">
+                        <div class="post-info">
+                            <h4>Michael Chen</h4>
+                            <p>Mathematics • 5 hours ago</p>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Struggling with linear algebra concepts. Can anyone explain eigenvectors in simple terms? I've been watching these videos but still confused:</p>
+                        <div class="embedded-content">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=qa9fI6qvUQY" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="post-tags">
+                        <span class="tag">#LinearAlgebra</span>
+                        <span class="tag">#MathHelp</span>
+                    </div>
+                    <div class="post-actions">
+                        <button class="button button-outline"><i class="fas fa-thumbs-up"></i> Like <span class="count">23</span></button>
+                        <button class="button button-outline"><i class="fas fa-comment"></i> Comment <span class="count">8</span></button>
+                        <button class="button button-outline"><i class="fas fa-share"></i> Share <span class="count">2</span></button>
+                    </div>
+                </div>
+
+                <!-- Student Post 3 -->
+                <div class="student-post">
+                    <div class="post-header">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Student" class="student-avatar">
+                        <div class="post-info">
+                            <h4>Emily Davis</h4>
+                            <p>Biology • 1 day ago</p>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Just discovered this amazing resource for biology students! It has interactive 3D models of cells and organisms:</p>
+                        <div class="resource-card">
+                            <h5>BioDigital Human</h5>
+                            <p>Interactive 3D anatomy and biology models</p>
+                            <a href="#" class="resource-link">Visit Resource <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="post-tags">
+                        <span class="tag">#Biology</span>
+                        <span class="tag">#StudyResources</span>
+                    </div>
+                    <div class="post-actions">
+                        <button class="button button-outline"><i class="fas fa-thumbs-up"></i> Like <span class="count">35</span></button>
+                        <button class="button button-outline"><i class="fas fa-comment"></i> Comment <span class="count">5</span></button>
+                        <button class="button button-outline"><i class="fas fa-share"></i> Share <span class="count">4</span></button>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- COURSES: Current Courses -->
+            <div class="tab-content active" id="courses">
+                <!-- Course 1 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <img src="img/Machine.jpg" alt="Course Image" class="course-image">
+                        <div class="course-info">
+                            <h4>Introduction to Machine Learning</h4>
+                            <p>Computer Science Department</p>
+                        </div>
+                    </div>
+                    <div class="course-details">
+                        <p>This course covers the fundamentals of machine learning, including supervised and unsupervised learning, model evaluation, and neural networks.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-user"></i> 120 students</span>
+                            <span><i class="fas fa-clock"></i> 12 weeks</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                    <div class="course-actions">
+                        <button class="button button-primary">View Progress</button>
+                        <button class="button button-outline">Course Details</button>
+                    </div>
+                    <div class="course-tags">
+                        <span class="tag">#MachineLearning</span>
+                        <span class="tag">#AI</span>
+                        <span class="tag">#DataScience</span>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Course Image" class="course-image">
+                        <div class="course-info">
+                            <h4>Advanced Algorithms</h4>
+                            <p>Computer Science Department</p>
+                        </div>
+                    </div>
+                    <div class="course-details">
+                        <p>An in-depth look at advanced algorithms including graph algorithms, dynamic programming, and NP-completeness.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-user"></i> 95 students</span>
+                            <span><i class="fas fa-clock"></i> 10 weeks</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                    </div>
+                    <div class="course-actions">
+                        <button class="button button-primary">View Progress</button>
+                        <button class="button button-outline">Course Details</button>
+                    </div>
+                    <div class="course-tags">
+                        <span class="tag">#Algorithms</span>
+                        <span class="tag">#ComputerScience</span>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <img src="img/25.jpg" alt="Course Image" class="course-image">
+                        <div class="course-info">
+                            <h4>Web Development Fundamentals</h4>
+                            <p>Computer Science Department</p>
+                        </div>
+                    </div>
+                    <div class="course-details">
+                        <p>Learn the fundamentals of web development including HTML, CSS, JavaScript, and modern frameworks like React.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-user"></i> 210 students</span>
+                            <span><i class="fas fa-clock"></i> 8 weeks</span>
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                    </div>
+                    <div class="course-actions">
+                        <button class="button button-primary">View Progress</button>
+                        <button class="button button-outline">Course Details</button>
+                    </div>
+                    <div class="course-tags">
+                        <span class="tag">#WebDevelopment</span>
+                        <span class="tag">#Programming</span>
+                        <span class="tag">#Frontend</span>
+                    </div>
+                </div>
+
             </div>
 
             <div class="tab-content" id="events">
-                <!-- Upcoming Study Sessions -->
+                <!-- EVENTS: Upcoming Study Sessions -->
                 <div class="card fade-in">
                     <div class="card-header">
                         <h3><i class="fas fa-calendar-alt"></i> Upcoming Study Sessions</h3>
@@ -191,6 +336,38 @@
                         <button class="button button-outline"><i class="fas fa-share"></i> Share <span class="count">7</span></button>
                     </div>
                 </div>
+
+                <!-- Study Buddy Match Section -->
+                <div class="card study-buddy fade-in">
+                    <div class="card-header">
+                        <h3><i class="fas fa-user-friends"></i> Study Buddy Match</h3>
+                        <a href="#" class="see-all">See All</a>
+                    </div>
+                    <div class="buddy-card">
+                        <div class="buddy-info">
+                            <img src="img/6.jpg" alt="Buddy" class="buddy-avatar">
+                            <div>
+                                <h4>Michelle Chinedu</h4>
+                                <p>Computer Science • AI Enthusiast</p>
+                            </div>
+                        </div>
+                        <div class="buddytags-heading">
+                            <span class="badge">Interests:</span>
+                        </div>
+
+                        <div class="buddy-tags">
+                            <span class="badge">Artificial Intelligence</span>
+                            <span class="badge">Algorithms</span>
+                            <span class="badge">Machine Learning</span>
+                            <span class="badge">Data Science</span>
+                        </div>
+                        <div class="buddy-actions">
+                            <button class="button button-outline"><i class="fas fa-user-plus"></i> Connect</button>
+                            <button class="button button-secondary"><i class="fas fa-comments"></i> Message</button>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
 
