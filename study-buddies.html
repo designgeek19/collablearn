@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Buddies | CollabLearn</title>
+    <link rel="stylesheet" href="study-buddies.css">
+    <link rel="icon" href="img/Logo_32x32.png" type="image/x-icon"> <!-- Add this line -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-graduation-cap"></i>
+                <h1>CollabLearn</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Dashboard</a>
+                <a href="explore-courses.html" class="active"><i class="fas fa-graduation-cap"></i>Courses</a>
+                <a href="notes.html"><i class="fas fa-book"></i> Notes</a>
+                <a href="qa.html"><i class="fas fa-question-circle"></i> Q&A Forunm</a>
+                <a href="study-rooms.html"><i class="fas fa-chalkboard-teacher"></i> Study Rooms</a>
+            </div>
+            <div class="user-section">
+                <div class="xp-bar">
+                    <div class="xp-fill" style="width: 65%;"></div>
+                </div>
+                <div class="user-info">
+                    <span class="level-badge">Lvl 3</span>
+                    <div class="streak-counter">
+                        <div class="streak-icon">🔥</div>
+                        <span>5</span>
+                    </div>
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User Avatar" class="avatar">
+                </div>
+                <button class="dark-mode-toggle"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="study-buddies-container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="search-section">
+                <h3>Find Study Buddies</h3>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search buddies...">
+                </div>
+                <button class="button button-primary find-buddy-button">
+                    <i class="fas fa-user-plus"></i> Find Buddy
+                </button>
+            </div>
+
+            <div class="filter-section">
+                <h4>Filters</h4>
+                <div class="filter-group">
+                    <h5>Subject</h5>
+                    <select class="filter-select">
+                        <option value="">All Subjects</option>
+                        <option value="math">Mathematics</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="physics">Physics</option>
+                        <option value="biology">Biology</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <h5>Skill Level</h5>
+                    <select class="filter-select">
+                        <option value="">All Levels</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <h5>Availability</h5>
+                    <select class="filter-select">
+                        <option value="">Anytime</option>
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                    </select>
+                </div>
+
+                <button class="button button-outline apply-filters-button">
+                    Apply Filters
+                </button>
+            </div>
+
+            <div class="current-groups">
+                <h4>Your Groups</h4>
+                <div class="group-list">
+                    <div class="group-item active">
+                        <i class="fas fa-users"></i>
+                        <span>General Study</span>
+                    </div>
+                    <div class="group-item">
+                        <i class="fas fa-code"></i>
+                        <span>CS Majors</span>
+                    </div>
+                    <div class="group-item">
+                        <i class="fas fa-flask"></i>
+                        <span>Science Club</span>
+                    </div>
+                    <div class="group-item">
+                        <i class="fas fa-book"></i>
+                        <span>Book Club</span>
+                    </div>
+                </div>
+                <button class="button button-outline create-group-button">
+                    <i class="fas fa-plus"></i> Create Group
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="buddies-header">
+                <h2>Your Study Buddies</h2>
+                <div class="header-actions">
+                    <button class="button button-outline sort-button">
+                        <i class="fas fa-sort"></i> Sort
+                    </button>
+                    <button class="button button-primary new-group-button">
+                        <i class="fas fa-plus"></i> New Group
+                    </button>
+                </div>
+            </div>
+
+            <!-- Current Study Buddies Section -->
+            <div class="buddies-section">
+                <div class="buddy-card">
+                    <div class="buddy-header">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Buddy" class="buddy-avatar">
+                        <div class="buddy-info">
+                            <h4>Michael Chen</h4>
+                            <p>Computer Science • University of Texas</p>
+                        </div>
+                    </div>
+                    <div class="buddy-details">
+                        <div class="subject-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Algorithms</span>
+                        </div>
+                        <p class="availability">Available: Mon-Wed 2-5 PM</p>
+                    </div>
+                    <div class="buddy-actions">
+                        <button class="button button-outline message-button">
+                            <i class="fas fa-comment"></i> Message
+                        </button>
+                        <button class="button button-primary schedule-button">
+                            <i class="fas fa-calendar-plus"></i> Schedule
+                        </button>
+                    </div>
+                </div>
+
+                <div class="buddy-card">
+                    <div class="buddy-header">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Buddy" class="buddy-avatar">
+                        <div class="buddy-info">
+                            <h4>Emily Davis</h4>
+                            <p>Biology • Stanford University</p>
+                        </div>
+                    </div>
+                    <div class="buddy-details">
+                        <div class="subject-tags">
+                            <span class="tag">Genetics</span>
+                            <span class="tag">Cell Biology</span>
+                        </div>
+                        <p class="availability">Available: Tue-Thu 10 AM-1 PM</p>
+                    </div>
+                    <div class="buddy-actions">
+                        <button class="button button-outline message-button">
+                            <i class="fas fa-comment"></i> Message
+                        </button>
+                        <button class="button button-primary schedule-button">
+                            <i class="fas fa-calendar-plus"></i> Schedule
+                        </button>
+                    </div>
+                </div>
+
+                <div class="buddy-card">
+                    <div class="buddy-header">
+                        <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="Buddy" class="buddy-avatar">
+                        <div class="buddy-info">
+                            <h4>David Wilson</h4>
+                            <p>Mathematics • MIT</p>
+                        </div>
+                    </div>
+                    <div class="buddy-details">
+                        <div class="subject-tags">
+                            <span class="tag">Calculus</span>
+                            <span class="tag">Linear Algebra</span>
+                        </div>
+                        <p class="availability">Available: Wed-Fri 3-6 PM</p>
+                    </div>
+                    <div class="buddy-actions">
+                        <button class="button button-outline message-button">
+                            <i class="fas fa-comment"></i> Message
+                        </button>
+                        <button class="button button-primary schedule-button">
+                            <i class="fas fa-calendar-plus"></i> Schedule
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recommended Buddies Section -->
+            <div class="recommended-section">
+                <h3>Recommended Study Buddies</h3>
+                <div class="buddy-grid">
+                    <div class="buddy-grid-item">
+                        <img src="https://randomuser.me/api/portraits/women/25.jpg" alt="Buddy" class="buddy-avatar">
+                        <div class="buddy-grid-info">
+                            <h4>Sophia Martinez</h4>
+                            <p>Physics • Harvard</p>
+                        </div>
+                        <div class="buddy-grid-tags">
+                            <span class="tag">Quantum Physics</span>
+                        </div>
+                        <button class="button button-outline connect-button">
+                            <i class="fas fa-user-plus"></i> Connect
+                        </button>
+                    </div>
+
+                    <div class="buddy-grid-item">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Buddy" class="buddy-avatar">
+                        <div class="buddy-grid-info">
+                            <h4>James Wilson</h4>
+                            <p>Chemistry • Yale</p>
+                        </div>
+                        <div class="buddy-grid-tags">
+                            <span class="tag">Organic Chemistry</span>
+                        </div>
+                        <button class="button button-outline connect-button">
+                            <i class="fas fa-user-plus"></i> Connect
+                        </button>
+                    </div>
+
+                    <div class="buddy-grid-item">
+                        <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Buddy" class="buddy-avatar">
+                        <div class="buddy-grid-info">
+                            <h4>Olivia Brown</h4>
+                            <p>Computer Science • Stanford</p>
+                        </div>
+                        <div class="buddy-grid-tags">
+                            <span class="tag">Data Structures</span>
+                            <span class="tag">Algorithms</span>
+                        </div>
+                        <button class="button button-outline connect-button">
+                            <i class="fas fa-user-plus"></i> Connect
+                        </button>
+                    </div>
+
+                    <div class="buddy-grid-item">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Buddy" class="buddy-avatar">
+                        <div class="buddy-grid-info">
+                            <h4>Daniel Lee</h4>
+                            <p>Mathematics • Princeton</p>
+                        </div>
+                        <div class="buddy-grid-tags">
+                            <span class="tag">Calculus</span>
+                            <span class="tag">Statistics</span>
+                        </div>
+                        <button class="button button-outline connect-button">
+                            <i class="fas fa-user-plus"></i> Connect
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar - Chat Section -->
+        <aside class="chat-sidebar">
+            <div class="chat-header">
+                <h3>Study Chat</h3>
+                <div class="chat-actions">
+                    <button class="chat-action-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="chat-action-button">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="chat-list">
+                <div class="chat-item active">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Chat" class="chat-avatar">
+                    <div class="chat-info">
+                        <h4>Michael Chen</h4>
+                        <p>Hey, when are we studying for the algorithms test?</p>
+                    </div>
+                    <div class="chat-meta">
+                        <span class="chat-time">2:30 PM</span>
+                        <span class="chat-badge">3</span>
+                    </div>
+                </div>
+
+                <div class="chat-item">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Chat" class="chat-avatar">
+                    <div class="chat-info">
+                        <h4>Emily Davis</h4>
+                        <p>Can you help me with this biology problem?</p>
+                    </div>
+                    <div class="chat-meta">
+                        <span class="chat-time">Yesterday</span>
+                    </div>
+                </div>
+
+                <div class="chat-item">
+                    <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="Chat" class="chat-avatar">
+                    <div class="chat-info">
+                        <h4>David Wilson</h4>
+                        <p>Let's review the calculus homework together</p>
+                    </div>
+                    <div class="chat-meta">
+                        <span class="chat-time">Monday</span>
+                    </div>
+                </div>
+
+                <div class="chat-item">
+                    <div class="chat-group-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="chat-info">
+                        <h4>CS Study Group</h4>
+                        <p>Michael: Does anyone understand this algorithm?</p>
+                    </div>
+                    <div class="chat-meta">
+                        <span class="chat-time">Sunday</span>
+                        <span class="chat-badge">12</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-section">
+                <div class="chat-input-container">
+                    <input type="text" placeholder="Message #general" class="chat-input">
+                    <button class="chat-send-button">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Modal Container -->
+    <div id="modal-container"></div>
+
+    <!-- Notification Container -->
+    <div id="notification-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CollabLearn - Peer Learning Platform</title>
-    <link rel="icon" href="img/Logo_32x32.png" type="image/x-icon"> <!-- Add this line -->
+    <link rel="icon" href="img/Logo_32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="container">
             <div class="logo">
                 <i class="fas fa-graduation-cap"></i>
                 <h1>CollabLearn</h1>
             </div>
-            <div class="nav-links">
-                <a href="#" class="active" data-tab="dashboard"><i class="fas fa-home"></i> Dashboard</a>
-                <a href="#" data-tab="study-buddies"><i class="fas fa-users"></i> Study Buddies</a>
-                <a href="#" data-tab="notes"><i class="fas fa-book"></i> Notes</a>
-                <a href="#" data-tab="qa"><i class="fas fa-question-circle"></i> Q&A</a>
-                <a href="#" data-tab="study-rooms"><i class="fas fa-chalkboard-teacher"></i> Study Rooms</a>
-            </div>
+                <div class="nav-links">
+                <a href="index.html" class="active"><i class="fas fa-home"></i>Dashboard</a>
+                <a href="explore-courses.html"><i class="fas fa-graduation-cap"></i>Courses</a>
+                <a href="notes.html"><i class="fas fa-book"></i>Notes</a>
+                <a href="qa.html"><i class="fas fa-question-circle"></i>Q&A Forunm</a>
+                <a href="study-rooms.html"><i class="fas fa-chalkboard-teacher"></i>Study Rooms</a>
+                </div>
             <div class="user-section">
                 <div class="xp-bar">
                     <div class="xp-fill" style="width: 65%;"></div>
@@ -35,7 +35,9 @@
                         <span>5</span>
                     </div>
                     <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User Avatar" class="avatar">
-
+                </div>
+                <button class="dark-mode-toggle"><i class="fas fa-moon"></i></button>
+            </div>
         </div>
     </nav>
 
@@ -74,6 +76,8 @@
                     <li><a href="#" class="post-option" data-action="schedule-study"><i class="fas fa-calendar-plus"></i> Schedule Study</a></li>
                     <li><a href="#" class="post-option" data-action="find-buddy"><i class="fas fa-user-plus"></i> Find Buddy</a></li>
                     <li><a href="#" class="post-option" data-action="ask-question"><i class="fas fa-question-circle"></i> Ask Question</a></li>
+                    <li><a href="#" class="post-option" data-action="settings-preferences"><i class="fas fa-gear"></i> Settings/Preferences</a></li>
+                    <li><a href="#" class="post-option" data-action="logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
                 </ul>
             </div>
 
@@ -91,10 +95,11 @@
         <div class="main-content">
             <div class="welcome-card fade-in">
                 <h2>Welcome back, Sarah! 👋</h2>
-                <p>You have 3 upcoming study sessions and 2 new questions to answer.</p>
+                <p>You are currently enrolled in 4 courses, 3 upcoming study sessions and 2 new questions to answer.</p>
                 <div class="quick-actions">
-                    <button class="button button-outline create-post-button"><i class="fas fa-plus-circle"></i> New Post</button>
-                    <button class="button button-primary"><i class="fas fa-calendar-plus"></i> Schedule Study</button>
+                    <button class="button button-primary create-post-button"><i class="fas fa-plus-circle"></i> New Post</button>
+                    <button class="button button-outline"><i class="fas fa-calendar-plus"></i> Schedule Study</button>
+                    <button class="button button-outline"><i class="fas fa-book"></i> My Courses</button>
                 </div>
             </div>
 
@@ -111,10 +116,10 @@
                 <!-- Student Post 1 -->
                 <div class="student-post">
                     <div class="post-header">
-                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Student" class="student-avatar">
+                        <img src="img/15.jpg" alt="Student" class="student-avatar">
                         <div class="post-info">
-                            <h4>Sarah Johnson</h4>
-                            <p>Computer Science • 2 hours ago</p>
+                            <h4>Sarah Adenuga</h4>
+                            <p>Studying Robotics +3 other courses • Posted 2 hours ago</p>
                         </div>
                     </div>
                     <div class="post-content">
@@ -140,16 +145,16 @@
                 <!-- Student Post 2 -->
                 <div class="student-post">
                     <div class="post-header">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Student" class="student-avatar">
+                        <img src="img/26.jpg"Student" class="student-avatar">
                         <div class="post-info">
                             <h4>Michael Chen</h4>
-                            <p>Mathematics • 5 hours ago</p>
+                            <p>Studying Mathematics +2 other courses • Posted 2 hours ago</p>
                         </div>
                     </div>
                     <div class="post-content">
                         <p>Struggling with linear algebra concepts. Can anyone explain eigenvectors in simple terms? I've been watching these videos but still confused:</p>
                         <div class="embedded-content">
-                            <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=qa9fI6qvUQY" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=IdsV0RaC9jM" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                     <div class="post-tags">
@@ -166,10 +171,10 @@
                 <!-- Student Post 3 -->
                 <div class="student-post">
                     <div class="post-header">
-                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Student" class="student-avatar">
+                        <img src="img/29.jpg" alt="Student" class="student-avatar">
                         <div class="post-info">
-                            <h4>Emily Davis</h4>
-                            <p>Biology • 1 day ago</p>
+                            <h4>Esther Amadi</h4>
+                            <p>Studying Bio-Technology • Posted 4 hours ago</p>
                         </div>
                     </div>
                     <div class="post-content">
@@ -191,6 +196,118 @@
                     </div>
                 </div>
 
+                <!-- Student Post 4 -->
+                <div class="student-post">
+                    <div class="post-header">
+                        <img src="img/25.jpg" alt="Student" class="student-avatar">
+                        <div class="post-info">
+                            <h4>Daniel Olanrewaju</h4>
+                            <p>Studying Business Intelligence • Posted 5 hours ago</p>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Wrapped up our group presentation on strategic management today. Here are the key takeaways we discussed:</p>
+                        <ul>
+                            <li>SWOT analysis for sustainable business growth</li>
+                            <li>Porter’s Five Forces in market analysis</li>
+                            <li>Strategic alignment with corporate goals</li>
+                        </ul>
+                    </div>
+                    <div class="post-tags">
+                        <span class="tag">#Strategy</span>
+                        <span class="tag">#BusinessModel</span>
+                        <span class="tag">#SWOT</span>
+                    </div>
+                    <div class="post-actions">
+                        <button class="button button-outline"><i class="fas fa-thumbs-up"></i> Like <span class="count">24</span></button>
+                        <button class="button button-outline"><i class="fas fa-comment"></i> Comment <span class="count">5</span></button>
+                        <button class="button button-outline"><i class="fas fa-share"></i> Share <span class="count">2</span></button>
+                    </div>
+                </div>
+
+                <!-- Student Post 5 -->
+                <div class="student-post">
+                    <div class="post-header">
+                        <img src="img/21.jpg" alt="Student" class="student-avatar">
+                        <div class="post-info">
+                            <h4>Emmanuella Ogbu</h4>
+                            <p>Psychology • 5 hours ago</p>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Looking for committed study buddies in "Clinical Psychology." My study schedule can be flexible depending on how committed you are. Comment below if you're interested</p>
+                    </div>
+                    <div class="post-tags">
+                        <span class="tag">#Medicaltherapy</span>
+                        <span class="tag">#ClinicalPsychology</span>
+                        <span class="tag">#Memory</span>
+                        <span class="tag">#Perception</span>
+                    </div>
+                    <div class="post-actions">
+                        <button class="button button-outline"><i class="fas fa-thumbs-up"></i> Like <span class="count">36</span></button>
+                        <button class="button button-outline"><i class="fas fa-comment"></i> Comment <span class="count">9</span></button>
+                        <button class="button button-outline"><i class="fas fa-share"></i> Share <span class="count">1</span></button>
+                    </div>
+                </div>
+
+                <!-- Student Post 6 -->
+                <div class="student-post">
+                    <div class="post-header">
+                        <img src="img/17.jpg" alt="Student" class="student-avatar">
+                        <div class="post-info">
+                            <h4>Isaac Mensah</h4>
+                            <p>Studying Mechanical Engineering • Posted 8 hours ago</p>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Finally completed our fluid mechanics lab. These were the highlights:</p>
+                        <ul>
+                            <li>Measured pressure drops across different pipe materials</li>
+                            <li>Verified Bernoulli’s principle in closed systems</li>
+                            <li>Observed flow behavior in turbulent and laminar regimes</li>
+                        </ul>
+                    </div>
+                    <div class="post-tags">
+                        <span class="tag">#FluidMechanics</span>
+                        <span class="tag">#EngineeringLab</span>
+                        <span class="tag">#Bernoulli</span>
+                    </div>
+                    <div class="post-actions">
+                        <button class="button button-outline"><i class="fas fa-thumbs-up"></i> Like <span class="count">19</span></button>
+                        <button class="button button-outline"><i class="fas fa-comment"></i> Comment <span class="count">6</span></button>
+                        <button class="button button-outline"><i class="fas fa-share"></i> Share <span class="count">0</span></button>
+                    </div>
+                </div>
+
+                <!-- Student Post 7 -->
+                <div class="student-post">
+                    <div class="post-header">
+                        <img src="img/1.jpg" alt="Student" class="student-avatar">
+                        <div class="post-info">
+                            <h4>Linda Okafor</h4>
+                            <p>Studying English Literature +2 other courses • Posted 1 day ago</p>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Started my comparative essay on postcolonial themes in African literature. Main points so far:</p>
+                        <ul>
+                            <li>Identity crisis in Achebe’s *Things Fall Apart*</li>
+                            <li>Resilience and resistance in Adichie’s *Half of a Yellow Sun*</li>
+                            <li>Role of language in cultural preservation and conflict</li>
+                        </ul>
+                    </div>
+                    <div class="post-tags">
+                        <span class="tag">#PostcolonialLit</span>
+                        <span class="tag">#AfricanAuthors</span>
+                        <span class="tag">#EssayWriting</span>
+                    </div>
+                    <div class="post-actions">
+                        <button class="button button-outline"><i class="fas fa-thumbs-up"></i> Like <span class="count">42</span></button>
+                        <button class="button button-outline"><i class="fas fa-comment"></i> Comment <span class="count">10</span></button>
+                        <button class="button button-outline"><i class="fas fa-share"></i> Share <span class="count">4</span></button>
+                    </div>
+                </div>
+
             </div>
             
             <!-- COURSES: Current Courses -->
@@ -198,10 +315,10 @@
                 <!-- Course 1 -->
                 <div class="course-card">
                     <div class="course-header">
-                        <img src="img/Machine.jpg" alt="Course Image" class="course-image">
+                        <img src="img/M.png" alt="Course Image" class="course-image">
                         <div class="course-info">
                             <h4>Introduction to Machine Learning</h4>
-                            <p>Computer Science Department</p>
+                            <p>Data Science</p>
                         </div>
                     </div>
                     <div class="course-details">
@@ -229,7 +346,7 @@
                         <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Course Image" class="course-image">
                         <div class="course-info">
                             <h4>Advanced Algorithms</h4>
-                            <p>Computer Science Department</p>
+                            <p>Data Science</p>
                         </div>
                     </div>
                     <div class="course-details">
@@ -256,7 +373,7 @@
                         <img src="img/25.jpg" alt="Course Image" class="course-image">
                         <div class="course-info">
                             <h4>Web Development Fundamentals</h4>
-                            <p>Computer Science Department</p>
+                            <p>Web & Software Development</p>
                         </div>
                     </div>
                     <div class="course-details">
@@ -277,6 +394,150 @@
                         <span class="tag">#Frontend</span>
                     </div>
                 </div>
+
+                <!-- Course 4 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <img src="img/L.jpg" alt="Course Image" class="course-image">
+                        <div class="course-info">
+                            <h4>Full-Stack Web Development</h4>
+                            <p>Web & Software Development</p>
+                        </div>
+                    </div>
+                    <div class="course-details">
+                        <p>Learn how to build modern web applications from scratch using HTML, CSS, JavaScript, Node.js, and MongoDB. Includes real-world projects and hands-on labs.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-user"></i> 95 students</span>
+                            <span><i class="fas fa-clock"></i> 10 weeks</span>
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                    </div>
+                    <div class="course-actions">
+                        <button class="button button-primary">View Progress</button>
+                        <button class="button button-outline">Course Details</button>
+                    </div>
+                    <div class="course-tags">
+                        <span class="tag">#WebDevelopment</span>
+                        <span class="tag">#JavaScript</span>
+                        <span class="tag">#NodeJS</span>
+                    </div>
+                </div>
+
+                <!-- COURSES: Recommended Courses -->
+                <div class="course-header"><h3>Recommended Courses</h3></div>
+
+                <!-- Course 5 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <img src="img/E.jpg" alt="Course Image" class="course-image">
+                        <div class="course-info">
+                            <h4>Digital Marketing Strategies</h4>
+                            <p>Marketing & Communications</p>
+                        </div>
+                    </div>
+                    <div class="course-details">
+                        <p>This course explores SEO, social media marketing, content strategy, and analytics tools to help you build and optimize online campaigns.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-user"></i> 78 students</span>
+                            <span><i class="fas fa-clock"></i> 8 weeks</span>
+                            <span><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                    </div>
+                    <div class="course-actions">
+                        <button class="button button-primary">Enroll Now</button>
+                        <button class="button button-outline">Course Details</button>
+                    </div>
+                    <div class="course-tags">
+                        <span class="tag">#Marketing</span>
+                        <span class="tag">#SEO</span>
+                        <span class="tag">#SocialMedia</span>
+                    </div>
+                </div>
+
+                <!-- Course 6 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <img src="img/2.jpg" alt="Course Image" class="course-image">
+                        <div class="course-info">
+                            <h4>Human Anatomy and Physiology</h4>
+                            <p>Medical Sciences</p>
+                        </div>
+                    </div>
+                    <div class="course-details">
+                        <p>An in-depth look at the structure and function of the human body systems, including interactive lab simulations and case studies.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-user"></i> 110 students</span>
+                            <span><i class="fas fa-clock"></i> 14 weeks</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                    </div>
+                    <div class="course-actions">
+                        <button class="button button-primary">Enroll Now</button>
+                        <button class="button button-outline">Course Details</button>
+                    </div>
+                    <div class="course-tags">
+                        <span class="tag">#Anatomy</span>
+                        <span class="tag">#Biology</span>
+                        <span class="tag">#Healthcare</span>
+                    </div>
+                </div>
+
+                <!-- Course 7 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <img src="img/E.jpg" alt="Course Image" class="course-image">
+                        <div class="course-info">
+                            <h4>Principles of Financial Accounting</h4>
+                            <p>Accounting & Finance</p>
+                        </div>
+                    </div>
+                    <div class="course-details">
+                        <p>Learn the basics of financial statements, journal entries, and budgeting. Ideal for anyone interested in business or entrepreneurship.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-user"></i> 88 students</span>
+                            <span><i class="fas fa-clock"></i> 9 weeks</span>
+                            <span><i class="fas fa-star"></i> 4.5</span>
+                        </div>
+                    </div>
+                    <div class="course-actions">
+                        <button class="button button-primary">Enroll Now</button>
+                        <button class="button button-outline">Course Details</button>
+                    </div>
+                    <div class="course-tags">
+                        <span class="tag">#Accounting</span>
+                        <span class="tag">#Finance</span>
+                        <span class="tag">#Business</span>
+                    </div>
+                </div>
+
+                <!-- Course 8 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <img src="img/J.png" alt="Course Image" class="course-image">
+                        <div class="course-info">
+                            <h4>Design Thinking and UI/UX Design</h4>
+                            <p>Product Design</p>
+                        </div>
+                    </div>
+                    <div class="course-details">
+                        <p>Learn how to design high fidelity interactive prototypes for websites and mobile apps all in one platform.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-user"></i> 64 students</span>
+                            <span><i class="fas fa-clock"></i> 6 weeks</span>
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                    </div>
+                    <div class="course-actions">
+                        <button class="button button-primary">Enroll Now</button>
+                        <button class="button button-outline">Course Details</button>
+                    </div>
+                    <div class="course-tags">
+                        <span class="tag">#UI/UX</span>
+                        <span class="tag">#Prototype Design</span>
+                        <span class="tag">#Design_Thinking</span>
+                    </div>
+                </div>
+
 
             </div>
 
