@@ -187,26 +187,36 @@ body {
   display: grid;
   grid-template-columns: 250px 1fr 300px;
   gap: 1.5rem;
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
 }
 
-.sidebar-nav {
+.sidebar {
   background-color: white;
   border-radius: var(--border-radius);
-  padding: 1.5rem;
+  padding: 1rem;
   box-shadow: var(--shadow-sm);
 }
 
-.sidebar-nav h4 {
+.sidebar h3 {
   margin-bottom: 1rem;
   color: var(--text-secondary);
+  font-size:medium;
 }
 
-.sidebar-nav ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  /* gap: 0.75rem; */
+.filter-list {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding-left: 1.5rem;
+  gap: 30px;
+  box-shadow: var(--shadow-sm);
+}
+
+.filter-list li {
+  background-color: white;
+  border-radius: 4px;
+  padding-left: 0.6rem;
+  margin-bottom: 0.5rem;
+  box-shadow: var(--shadow-sm);
 }
 
 .sidebar-nav a {
@@ -225,23 +235,24 @@ body {
   color: var(--primary);
 }
 
-.trending-topics {
+.trending-courses {
   background-color: white;
   border-radius: var(--border-radius);
-  padding: 1.5rem;
+  /* padding: 1rem; */
   box-shadow: var(--shadow-sm);
 }
 
-.trending-topics h4 {
+.trending-courses h3 {
   margin-bottom: 1rem;
   color: var(--text-secondary);
+  font-size:medium;
 }
 
 .topic-tag {
   display: inline-block;
   background-color: rgba(6, 182, 212, 0.1);
   color: var(--secondary);
-  padding: 0.5rem 1rem;
+  /* padding: 0.5rem 1rem; */
   border-radius: 20px;
   font-size: 0.8rem;
   margin-bottom: 0.5rem;
@@ -255,18 +266,19 @@ body {
 .course-section {
     margin-bottom: 2rem;
     margin-top: 2rem;
-    padding-left: 2rem;
+    /* padding-left: 1rem; */
 }
 
 .course-section h2 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
+  /* color: var(--text-secondary); */
     font-size: larger;
 }
 
 .course-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .course-card {
@@ -279,7 +291,7 @@ body {
 }
 
 .course-thumbnail {
-    width: 100%;
+    width: 80%;
     height: 150px;
     object-fit: cover;
     border-radius: 4px;
@@ -365,7 +377,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.919);
+    background-color: rgba(255, 255, 255, 0.962);
     box-shadow: #363636;
     color: rgb(19, 19, 19);
     display: none;
