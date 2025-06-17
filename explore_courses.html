@@ -41,6 +41,31 @@
         </div>
     </nav>
 
+        <!-- Main Content with Sidebar -->
+        <main class="content">
+        
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+        <h3>Filter by Category</h3>
+        <ul class="filter-list">
+            <li><input type="checkbox" id="data-science"><label for="data-science">Data Science</label></li>
+            <li><input type="checkbox" id="math"><label for="math">Mathematics</label></li>
+            <li><input type="checkbox" id="cs"><label for="cs">Computer Science</label></li>
+            <li><input type="checkbox" id="engineering"><label for="engineering">Engineering</label></li>
+            <li><input type="checkbox" id="health"><label for="health">Health Sciences</label></li>
+            <li><input type="checkbox" id="design"><label for="design">Product Design</label></li>
+        </ul>
+
+            <div class="trending-topics fade-in">
+                <h4>Trending Topics</h4>
+                <div class="topic-tag">#MachineLearning</div>
+                <div class="topic-tag">#Algorithms</div>
+                <div class="topic-tag">#WebDevelopment</div>
+                <div class="topic-tag">#DataScience</div>
+                <div class="topic-tag">#Python</div>
+            </div>
+        </aside>
+
             <section id="computer-science" class="course-section">
                 <h2>Your Courses</h2>
                 <div class="course-grid">
@@ -48,7 +73,7 @@
                         <img src="img/J.png" alt="Course Thumbnail" class="course-thumbnail">
                         <h3>Introduction to Design Thinking and UI/UX Design</h3>
                         <p class="category">Product Design</p>
-                        <p class="difficulty">Beginner</p>
+                        <p class="difficulty">Level: <i>Beginner</i></p>
                         <p class="duration">12 Topics • Self-paced</p>
                         <p class="rating">⭐ 4.5 (1200 ratings)</p>
                         <div class="progress-bar" style="width: 30%;"></div>
@@ -58,7 +83,53 @@
                             <button class="button-secondary">End Course</button>
                         </div>
                     </div>
-                    <!-- Repeat for other courses -->
+
+                        <div class="course-card">
+                        <img src="img/M.png" alt="Course Thumbnail" class="course-thumbnail">
+                        <h3>Introduction to Machine Learning</h3>
+                        <p class="category">Data Science</p>
+                        <p class="difficulty">Level: <i>Beginner</i></p>
+                        <p class="duration">16 Topics • 12 Weeks</p>
+                        <p class="rating">⭐ 4.8 (800 ratings)</p>
+                        <div class="progress-bar" style="width: 70%;"></div>
+                        <div class="hover-preview">
+                            <p>This course covers the fundamentals of machine learning, including supervised and unsupervised learning, model evaluation, and neural networks.</p>
+                            <button class="button-primary">Continue Course</button>
+                            <button class="button-secondary">End Course</button>
+                        </div>
+                        </div>
+
+                        <div class="course-card">
+                        <img src="img/P.jpeg" alt="Course Thumbnail" class="course-thumbnail">
+                        <h3>Advanced Algorithms in Mathematics</h3>
+                        <p class="category">Data Science</p>
+                        <p class="difficulty">Level: <i>Advanced</i></p>
+                        <p class="duration">16 Topics • 10 Weeks</p>
+                        <p class="rating">⭐ 4.9 (285 ratings)</p>
+                        <div class="progress-bar" style="width: 50%;"></div>
+                        <div class="hover-preview">
+                            <p>Learn the basics of design thinking process for product designers and developers, and how to get started with UI/UX Design with Figma.</p>
+                            <button class="button-primary">Continue Course</button>
+                            <button class="button-secondary">End Course</button>
+                        </div>
+                        </div>
+
+                        <div class="course-card">
+                        <img src="img/L.jpg" alt="Course Thumbnail" class="course-thumbnail">
+                        <h3>Full Stack Web Development</h3>
+                        <p class="category">Website | Application</p>
+                        <p class="difficulty">Level <i>Beginner</i></p>
+                        <p class="duration">12 Topics • 10 Weeks</p>
+                        <p class="rating">⭐ 4.7 (839 ratings)</p>
+                        <div class="progress-bar" style="width: 94%;"></div>
+                        <div class="hover-preview">
+                            <p>Learn how to build modern web applications from scratch using HTML, CSS, JavaScript, Node.js, and MongoDB. Includes real-world projects and hands-on labs.</p>
+                            <button class="button-primary">Continue Course</button>
+                            <button class="button-secondary">End Course</button>
+                        </div>
+                        </div>
+                    
+                    <!-- Repeat for more courses -->
                 </div>
             </section>
             <!-- Repeat for other categories -->
